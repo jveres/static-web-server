@@ -12,6 +12,7 @@ RUN strip /build/build/src/bin/lwan/lwan
 FROM scratch
 COPY --from=build /build/build/src/bin/lwan/lwan /bin/lwan
 COPY lwan.conf /etc/lwan.conf
+COPY lwan.html /etc/lwan.html
 WORKDIR /srv
 EXPOSE 8080
 
