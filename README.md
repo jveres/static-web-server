@@ -12,5 +12,5 @@ docker build -t static-web-server .
 
 ### Start server
 ```sh
-docker run -it --rm -p 8080:8080 static-web-server
+docker run --rm -p 8080:8080 -v ~/www-data:/srv static-web-server
 ```
